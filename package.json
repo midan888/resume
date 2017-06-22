@@ -25,7 +25,7 @@
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "7.0.*",
+    "babel-loader": "7.1.*",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.16.0",
     "cross-env": "5.0.*",
