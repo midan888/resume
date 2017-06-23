@@ -16,7 +16,7 @@ const VENDOR_LIBS = [
 ];
 
 module.exports = {
-  devtool: isDebug ? '' : 'source-map',
+  devtool: isDebug ? 'source-map' : '',
   entry: {
     bundle: './src/index.jsx',
     vendor: VENDOR_LIBS,
