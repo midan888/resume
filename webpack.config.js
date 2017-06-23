@@ -13,6 +13,9 @@ const VENDOR_LIBS = [
   'react-redux',
   'react-router',
   'redux',
+  'reset-css',
+  'prop-types',
+  'autoprefixer',
 ];
 
 module.exports = {
