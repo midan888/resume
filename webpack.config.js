@@ -45,6 +45,9 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
+        options: {
+          cacheDirectory: isDebug,
+        },
       },
       {
         test: /\.css$/,
@@ -79,6 +82,14 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]',
         },
       },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: 'static/media/[name].[hash:8].[ext]',
+        },
+      },
     ],
   },
 
@@ -95,5 +106,9 @@ module.exports = {
   devServer: {
     disableHostCheck: true,
     host: '0.0.0.0',
+  },
+
+  performance: {
+    hints: !isDebug,
   },
 };
