@@ -13,10 +13,13 @@ const VENDOR_LIBS = [
   'react-redux',
   'react-router',
   'redux',
+  'reset-css',
+  'prop-types',
+  'autoprefixer',
 ];
 
 module.exports = {
-  devtool: isDebug ? '' : 'source-map',
+  devtool: isDebug ? 'source-map' : '',
   entry: {
     bundle: './src/index.jsx',
     vendor: VENDOR_LIBS,
