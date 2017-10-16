@@ -15,7 +15,6 @@ const VENDOR_LIBS = [
   'redux',
   'reset-css',
   'prop-types',
-  'autoprefixer',
 ];
 
 module.exports = {

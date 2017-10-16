@@ -4,34 +4,5 @@
   ],
   "env": {
     "browser": true
-  },
-//  "plugins": [
-//    "flowtype"
-//  ],
-  "settings": {
-    "import/ignore": [
-      "\\base"
-    ],
-    "import/resolver": {
-      "webpack": {
-        "config": {
-          "resolve": {
-            "root": ["./src"]
-          }
-        }
-      }
-    }
-  },
-  "rules": {
-    "import/no-extraneous-dependencies": "off",
-    "import/no-unresolved": "off",
-    "import/extensions": "off",
-    "jsx-a11y/href-no-hash": "off"
-//    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-//    "react/prop-types": "off",
-//    "jsx-a11y/no-static-element-interactions": "off",
-//    "no-plusplus": "off",
-//    "no-restricted-syntax": "off",
-//    "no-param-reassign": "off"
   }
 }
