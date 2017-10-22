@@ -20,7 +20,7 @@ const VENDOR_LIBS = [
 module.exports = {
   devtool: isDebug ? 'source-map' : '',
   entry: {
-    bundle: './src/index.jsx',
+    bundle: ['whatwg-fetch', 'babel-polyfill', './src/index.jsx'],
     vendor: VENDOR_LIBS,
   },
   output: {
@@ -29,9 +29,10 @@ module.exports = {
   },
 
   resolve: {
-    alias: {
-      'modules/product': path.resolve(__dirname, 'src/modules/product'),
-    },
+    modules: [
+      'src',
+      'node_modules',
+    ],
     extensions: ['.js', '.jsx'],
   },
 
