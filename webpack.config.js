@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -97,9 +96,6 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      name: ['vendor', 'manifest'],
-    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
@@ -109,9 +105,5 @@ module.exports = {
   devServer: {
     disableHostCheck: true,
     host: '0.0.0.0',
-  },
-
-  performance: {
-    hints: !isDebug,
   },
 };

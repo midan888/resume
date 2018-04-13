@@ -1,6 +1,4 @@
-import {
-  ADMIN_SEARCH_LOAD_DATA,
-} from './constants';
+import { ADMIN_SEARCH_LOAD_DATA } from './constants';
 
 const INITIAL_STATE = {
   admins: [],
