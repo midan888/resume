@@ -1,0 +1,18 @@
+@import '../styles/mixins';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.asideWrap {
+  @include desktop {
+    flex: 0 0 100px;
+    height: 100%;
+  }
+}
+
+.container {
+  @include desktop {
+    display: flex,
+  }
+}

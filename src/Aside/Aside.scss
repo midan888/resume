@@ -1,0 +1,41 @@
+@import "../styles/colors";
+
+.root {
+  background-color: $brand;
+  padding: 16px;
+  color: white;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.inner {
+  display: flex;
+}
+
+.photo {
+  display: block;
+  max-width: 150px;
+  max-height: 150px;
+  margin-right: 8px;
+  border: 1px solid white;
+  padding: 8px;
+}
+
+.secondary {
+  color: black;
+}
+
+.infoBlock {
+  padding-bottom: 16px;
+}
+
+.value {
+  color: black;
+}
+
+.label {
+  text-transform: uppercase;
+}

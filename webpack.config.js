@@ -6,21 +6,10 @@ const env = process.env.NODE_ENV;
 
 const isDebug = env !== 'production';
 
-const VENDOR_LIBS = [
-  'react',
-  'react-dom',
-  'react-redux',
-  'react-router',
-  'redux',
-  'reset-css',
-  'prop-types',
-];
-
 module.exports = {
   devtool: isDebug ? 'source-map' : '',
   entry: {
     bundle: ['whatwg-fetch', 'babel-polyfill', './src/index.jsx'],
-    vendor: VENDOR_LIBS,
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -52,7 +41,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
@@ -69,6 +58,9 @@ module.exports = {
             },
             {
               loader: 'postcss-loader',
+            },
+            {
+              loader: 'sass-loader',
             },
           ],
         }),

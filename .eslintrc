@@ -10,19 +10,5 @@
     "expect": true,
     "describe": true,
     "jest": true
-  },
-  "settings": {
-    "import/resolver": {
-      "webpack": {
-        "config": {
-          "resolve": {
-            "modules": [
-              "node_modules",
-              "src"
-            ]
-          }
-        }
-      }
-    }
   }
 }
