@@ -1,0 +1,14 @@
+@import "../styles/colors";
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 16px 8px;
+}
+
+.list > div {
+  padding: 8px;
+  margin: 4px;
+  border: 1px solid $orange;
+}

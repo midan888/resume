@@ -1,0 +1,29 @@
+{
+  "about": "Web development is my vocation; there is constant drive and ambition to learn new technologies engage with new teams to gain and share knowledge. My main field of expertise is frontend development; my stack is react/ redux, bundling with Webpack and styling through SASS or JSS, also used JEST for testing. Additionally, I have hands-on backend experience mainly with PHP/ MYSQL but I have also used Mongo, Redis and Nodejs. In terms of infrastructure, I am familiar with Git, Teamcity, Jenkins, Jira and many more. I thoroughly enjoy team building activities and tasks, easy to communicate with, adaptable to new teams and highly productive, never hesitant to go the extra mile.",
+  "exp": {
+    "title": "Experience",
+    "finam": {
+      "title": "Finam - Senior Frontend developer",
+      "date": "Feb. 2017 to present",
+      "desc": "Mainly I code trading interfaces based on React/Redux. Code in Javascript and TypeScript, building in house npm libraries, working with api like, REST, GRPC, Protobuf. Working with microservices. UI performance Optimization. Unit test with Jest. Building CI configurations. Code reviewing. and a lot more interesting."
+    },
+    "helix": {
+      "title": "Helix Consulting, Senior Full stack developer",
+      "date": "2013 – 2017",
+      "desc": "Development and leading projects like booking platform frontend and backend, taxi service fronted apps, intranet CRM, e-commerce, social network, architecting and executing of mobile APIs with mobile team. doing meetings with clients and managers, helping in technical specifications, asigning tasks to junior developers. Technologies I used here were JS(React/Redux,expressjs), PHP(Laravel)"
+    },
+    "lsbf": {
+      "title": "London School of Business and Finance, Web developer and teacher",
+      "date": "2010 – 2013",
+      "desc": "Web development of the intranet website and public website of the school. Network, computer, software administration. Teaching kids computing for A-Level exams."
+    },
+    "ghills": {
+      "title": "Glendale Hills 2008 - 2010, 3D modelling and visualization",
+      "date": "2008 - 2010",
+      "desc": "3D Visualisation of Architectural Objects such as buildings, appartments"
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  }
+}

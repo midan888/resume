@@ -10,5 +10,8 @@
     "expect": true,
     "describe": true,
     "jest": true
+  },
+  "rules": {
+    "react/prop-types": "off"
   }
 }
