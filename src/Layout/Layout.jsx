@@ -3,6 +3,7 @@ import classes from './Layout.scss';
 import Aside from '../Aside';
 import Experience from '../Experience';
 import Skills from '../Skills';
+import Education from '../Education';
 
 const Layout = () => (
   <div className={classes.container}>
@@ -12,6 +13,7 @@ const Layout = () => (
     <div className={classes.content}>
       <Skills />
       <Experience />
+      <Education />
     </div>
   </div>
 );

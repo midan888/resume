@@ -3,5 +3,6 @@
 .title {
   display: inline-block;
   padding: 8px 24px;
-  background-color: $brand
+  background-color: $brand;
+  color: $primaryContrast;
 }

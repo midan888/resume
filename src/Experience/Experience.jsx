@@ -6,20 +6,31 @@ import SectionLabel from '../SectionLabel';
 
 import classes from './Experience.scss';
 
+const companies = [
+  'finam',
+  'helix',
+  'lsbf',
+  'ghills',
+];
+
 const Experience = ({ i18n }) => (
   <div className={classes.root}>
     <SectionLabel>{i18n('exp.title')}</SectionLabel>
-    <div className={classes.item}>
-      <Typography variant="title">
-        {i18n('exp.finam.title')}
-      </Typography>
-      <Typography className={classes.date}>
-        {i18n('exp.finam.date')}
-      </Typography>
-      <Typography className={classes.desc}>
-        {i18n('exp.finam.desc')}
-      </Typography>
-    </div>
+    {
+      companies.map(company => (
+        <div className={classes.item}>
+          <Typography variant="title">
+            {i18n(`exp.${company}.title`)}
+          </Typography>
+          <Typography className={classes.date}>
+            {i18n(`exp.${company}.date`)}
+          </Typography>
+          <Typography className={classes.desc}>
+            {i18n(`exp.${company}.desc`)}
+          </Typography>
+        </div>
+      ))
+    }
   </div>
 );
 

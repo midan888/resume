@@ -25,5 +25,9 @@
   },
   "skills": {
     "title": "Skills"
+  },
+  "edu": {
+    "title": "Education",
+    "desc": "Yerevan State University, Physics faculty, bachelors degree"
   }
 }
