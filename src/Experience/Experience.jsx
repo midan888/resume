@@ -3,6 +3,7 @@ import React from 'react';
 import withContent from '../content/withContent';
 import Typography from '../Typography';
 import SectionLabel from '../SectionLabel';
+import PaddedBlock from '../PaddedBlock';
 
 import classes from './Experience.scss';
 
@@ -19,18 +20,20 @@ const Experience = ({ i18n }) => (
     {
       companies.map(company => (
         <div key={company} className={classes.item}>
-          <Typography variant="title" bold>
-            {i18n(`exp.${company}.title`)}
-          </Typography>
-          <Typography variant="subheader">
-            {i18n(`exp.${company}.position`)}
-          </Typography>
-          <Typography className={classes.date}>
-            {i18n(`exp.${company}.date`)}
-          </Typography>
-          <Typography className={classes.desc}>
-            {i18n(`exp.${company}.desc`)}
-          </Typography>
+          <PaddedBlock>
+            <Typography variant="title" bold>
+              {i18n(`exp.${company}.title`)}
+            </Typography>
+            <Typography variant="subheader">
+              {i18n(`exp.${company}.position`)}
+            </Typography>
+            <Typography className={classes.date}>
+              {i18n(`exp.${company}.date`)}
+            </Typography>
+            <Typography className={classes.desc}>
+              {i18n(`exp.${company}.desc`)}
+            </Typography>
+          </PaddedBlock>
         </div>
       ))
     }

@@ -1,7 +1,36 @@
 @import '../styles/mixins';
 
-body {
+.container {
+  @include desktop {
+    display: flex,
+  }
+}
 
+.content {
+  padding-top: 24px;
+  @include desktop {
+    padding-top: 0;
+    margin-left: 196px;
+  }
+  @include print {
+    padding-top: 0;
+  }
+}
+
+.aboutContentWrap {
+  @include print {
+    display: none;
+  }
+}
+
+.aboutWrap {
+  display: none;
+
+  @include print {
+    padding-top: 32px;
+    display: block;
+    flex: 1 1 50%;
+  }
 }
 
 .asideWrap {
@@ -12,23 +41,15 @@ body {
     width: 196px;
     height: 100%;
   }
-}
 
-.container {
-  @include desktop {
-    display: flex,
-
+  @include print {
+    flex: 1 1 50%;
   }
 }
 
-.experienceTitle {
-
-}
-
-.content {
-  padding-top: 24px;
-  @include desktop {
-    padding-top: 0;
-    margin-left: 196px;
+.genInfo {
+  @include print {
+    display: flex;
+    flex-flow: row column;
   }
 }

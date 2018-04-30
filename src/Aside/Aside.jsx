@@ -1,6 +1,7 @@
 import React from 'react';
-import classes from './Aside.scss';
 import Typography from '../Typography';
+
+import classes from './Aside.scss';
 import photo from './IMG_1671.jpg';
 
 const Aside = () => (

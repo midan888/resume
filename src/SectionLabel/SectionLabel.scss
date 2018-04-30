@@ -1,8 +1,16 @@
 @import "../styles/colors";
+@import "../styles/mixins";
 
 .title {
   display: inline-block;
   padding: 8px 24px;
   background-color: $brand;
   color: $primaryContrast;
+
+  @include print {
+    font-size: 24px;
+    text-decoration: underline;
+    color: #000;
+    padding: 8px 16px;
+  }
 }

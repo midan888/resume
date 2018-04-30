@@ -1,3 +1,4 @@
+@import '../styles/mixins';
 
 .root {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -6,6 +7,10 @@
 
   &:global(.bold) {
     font-weight: 700;
+  }
+
+  @include print {
+    color: #000;
   }
 }
 

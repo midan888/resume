@@ -10,11 +10,18 @@ import classes from './Layout.scss';
 
 const Layout = () => (
   <div className={classes.container}>
-    <div className={classes.asideWrap}>
-      <Aside />
+    <div className={classes.genInfo}>
+      <div className={classes.asideWrap}>
+        <Aside />
+      </div>
+      <div className={classes.aboutWrap}>
+        <About />
+      </div>
     </div>
     <div className={classes.content}>
-      <About />
+      <div className={classes.aboutContentWrap}>
+        <About />
+      </div>
       <Skills />
       <Experience />
       <Education />
