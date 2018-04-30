@@ -18,9 +18,12 @@ const Experience = ({ i18n }) => (
     <SectionLabel>{i18n('exp.title')}</SectionLabel>
     {
       companies.map(company => (
-        <div className={classes.item}>
-          <Typography variant="title">
+        <div key={company} className={classes.item}>
+          <Typography variant="title" bold>
             {i18n(`exp.${company}.title`)}
+          </Typography>
+          <Typography variant="subheader">
+            {i18n(`exp.${company}.position`)}
           </Typography>
           <Typography className={classes.date}>
             {i18n(`exp.${company}.date`)}
