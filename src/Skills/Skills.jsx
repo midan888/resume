@@ -7,7 +7,7 @@ import PaddedBlock from '../PaddedBlock';
 import classes from './Skills.scss';
 
 const skills = [
-  'javaScript',
+  'javascript',
   'react',
   'redux',
   'grpc',
