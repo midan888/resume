@@ -7,6 +7,7 @@ const env = process.env.NODE_ENV;
 const isDebug = env !== 'production';
 
 module.exports = {
+  mode: isDebug ? 'development' : 'production',
   devtool: isDebug ? 'source-map' : '',
   entry: {
     bundle: ['whatwg-fetch', 'babel-polyfill', './src/index.jsx'],
@@ -73,7 +74,7 @@ module.exports = {
         test: /\.svg$/,
         loader: 'file-loader',
         query: {
-          name: 'static/media/[name].[hash:8].[ext]',
+          name: 'img/[name].[hash:8].[ext]',
         },
       },
       {
@@ -81,7 +82,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: 'static/media/[name].[hash:8].[ext]',
+          name: 'img/[name].[hash:8].[ext]',
         },
       },
     ],
@@ -97,5 +98,6 @@ module.exports = {
   devServer: {
     disableHostCheck: true,
     host: '0.0.0.0',
+    compress: !isDebug,
   },
 };
