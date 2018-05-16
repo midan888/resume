@@ -3,6 +3,7 @@ import Typography from '../Typography';
 
 import classes from './Aside.scss';
 import photo from './IMG_1671.jpg';
+import githubIcon from './github.svg';
 
 const Aside = () => (
   <aside className={classes.root}>
@@ -21,6 +22,14 @@ const Aside = () => (
         <div className={classes.infoBlock}>
           <Typography className={classes.label}>Skype</Typography>
           <Typography className={classes.value}>mikelangelo.d</Typography>
+        </div>
+        <div className={classes.infoBlock}>
+          <a href="https://github.com/midan888/resume">
+            <img className={classes.githubIcon} src={githubIcon} alt="github" />
+            <Typography className={classes.gitLabel}>
+              Resume
+            </Typography>
+          </a>
         </div>
       </div>
     </div>
