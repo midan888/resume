@@ -59,9 +59,17 @@
 .githubIcon {
   width: 32px;
   height: 32px;
+
+  @include print {
+    display: none;
+  }
 }
 
 .gitLabel {
   text-decoration: none;
   color: $primary;
+
+  @include print {
+    display: none;
+  }
 }
