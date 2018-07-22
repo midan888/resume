@@ -12,4 +12,10 @@ deploy:
     secure: "Y8eobPYvaOUm3vsIqAtMCghtjkL5wnMwuQuTK3DYKn25vmsS9OE/xNkan7a3HzeDG0tpAH6AFtUuFiHR3RJQMAMUxyA8UmnhRhYbm40gMgkBvWEf9v9YuommadcRc7NKVk2PFGbonmQPfq/sx1IqOvKMQp3n74LG4u+SeTE22WpX4GTWmIr101GcY5qO6T/aHepmkum+tpUjggUdZLKKwrtsrzQk/tNw4g8a2viXjHHF8P+F7MI9sxr0HpyTF68JAQxWv9yNkcKruZCWfVHn1u62M/Bo1qybXEpp9n4EoSjl56TQxWyQZEIQnREiUpzDoDac17RJMgeR1BQYKfW7cClFI/1dcqEwgxnMRYRJZFZpQl0RWpyYS97J9bn5aRQxPkgUrSFPOmUuuABO2iKvYdDqFHILF2ahpQKdK18sg3A5nFozwK+jSl8B8sbVJ98fjSuiRo4cb1OEbB2vqXSpgSzcbLKfZhPxu6CXq0OsRsiy3n58uW1r6QwMpbzzTZfYRklsckn4QU0597PGcaHOD837F8PWkbYyqyukSh7FnNFjD+J6LxaVE5WNBzo/IxbtYskXK9GCAwubMetyGUaDEW/lRm0c5rKJhCX/Vy1fNU84ulhH4yY7/pHGtal9HSfpOHG1LyQefZtvC0683nKruElUhx/+HlPgKiRQD4Jsnbs="
   project: "resume-841e6"
   skip_cleanup: true
+notifications:
+  email:
+    recipients:
+      - midan888@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
 
