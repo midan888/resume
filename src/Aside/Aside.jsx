@@ -13,7 +13,7 @@ const Aside = () => (
       <div>
         <div className={classes.infoBlock}>
           <Typography className={classes.label}>Email</Typography>
-          <Typography className={classes.value}>midan888@gmail.com</Typography>
+          <Typography className={classes.value}>info@mdanielyan.com</Typography>
         </div>
         <div className={classes.infoBlock}>
           <Typography className={classes.label}>Mobile</Typography>
